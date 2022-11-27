@@ -24,5 +24,13 @@ do strategy.SaveServiceConfigData(config)
 zw ##class(HS.FHIRServer.Tools.DataLoader).SubmitResourceFiles("/opt/irisapp/fhirdata/", "FHIRServer", appKey)
 
 do $System.OBJ.LoadDir("/opt/irisapp/src","ck",,1)
+
+zn "HSLIB"
+set namespace="FHIRINTEROP"
+set importdir="/opt/interop/src"
+//Install a Foundation namespace and change to it
+Do ##class(HS.HC.Util.Installer).InstallFoundation(namespace)
+zn namespace
+do $System.OBJ.LoadDir("/opt/interop/src","ck",.errorlog,1)
 //zpm "install fhir-portal"
 halt

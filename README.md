@@ -6,6 +6,8 @@ This is the base template for using InterSystems IRIS for Health Community Editi
 
 It setups a FHIR SERVER, imports the test data, demoes REST API usage with a simple web page.
 
+I added an Interoperability Production to process messages and send requests to the FHIR SERVER.
+
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
 

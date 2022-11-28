@@ -13,6 +13,8 @@ COPY data/fhir fhirdata
 COPY iris.script /tmp/iris.script
 COPY fhirUI /usr/irissys/csp/user/fhirUI
 COPY interop/src interop/src
+COPY sds.xml sds.xml
+COPY %ZSTART.mac .
 
 # run iris and initial 
 RUN iris start IRIS \

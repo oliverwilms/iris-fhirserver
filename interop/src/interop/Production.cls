@@ -7,7 +7,6 @@ XData ProductionDefinition
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
   <Item Name="interop.bs.FHIRFileService" Category="" ClassName="interop.bs.FHIRFileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
-    <Setting Target="Adapter" Name="FilePath">/app/data/fhir-input</Setting>
     <Setting Target="Adapter" Name="FileSpec">*.json</Setting>
     <Setting Target="Host" Name="TargetConfigNames">interop.bp.FileToFHIRServer</Setting>
   </Item>

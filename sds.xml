@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<defaultSettings>
+<item production="*" item="*" class="*" setting="FilePath" value="/opt/irisapp/fhir-input"><Deployable>true</Deployable></item>
+</defaultSettings>

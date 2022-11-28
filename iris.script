@@ -1,3 +1,7 @@
+zn "%SYS"
+do $SYSTEM.OBJ.Load("/opt/irisapp/%ZSTART.mac", "ck")
+do ##class(Security.Users).UnExpireUserPasswords("*")
+
 zn "HSLIB"
 set namespace="FHIRSERVER"
 Set appKey = "/fhir/r4"

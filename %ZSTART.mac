@@ -1,0 +1,25 @@
+ROUTINE %ZSTART
+%ZSTART ; User startup routine
+	Quit
+SYSTEM ; InterSystems IRIS starting
+	New
+	Try {
+		ZN "FHIRINTEROP"
+		Set ^Ens.AutoStart="interop.Production"
+		Set ^Ens.AutoStart("StartupPriority")=0
+    If ##class(%File).Exists("/opt/irisapp/sds.xml") {
+      Set tSC = ##class(Ens.Config.DefaultSettings).%Import("/opt/irisapp/sds.xml")
+    }
+		ZN "%SYS"
+	} Catch { }
+	Quit
+LOGIN ; a user logs into InterSystems IRIS
+	Quit
+JOB ; JOB'd process begins
+	Quit
+	New
+	Try {
+	} Catch { }
+	Quit
+CALLIN ; process enters via CALLIN interface
+	Quit

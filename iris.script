@@ -35,6 +35,6 @@ set namespace="FHIRINTEROP"
 Do ##class(HS.HC.Util.Installer).InstallFoundation(namespace)
 zn namespace
 do $System.OBJ.LoadDir("/opt/irisapp/interop/src","ck",.errorlog,1)
-Do ##class(interop.util).CreateServiceRegistry()
+Do ##class(interop.Util).CreateServiceRegistry()
 //zpm "install fhir-portal"
 halt

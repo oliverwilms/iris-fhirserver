@@ -6,6 +6,15 @@ XData ProductionDefinition
 <Production Name="interop.Production" LogGeneralTraceEvents="false">
   <Description></Description>
   <ActorPoolSize>2</ActorPoolSize>
+  <Item Name="EnsLib.File.PassthroughService" Category="" ClassName="EnsLib.File.PassthroughService" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="FileSpec">*csv</Setting>
+    <Setting Target="Host" Name="TargetConfigNames">interop.bp.Transformer</Setting>
+  </Item>
+  <Item Name="EnsLib.RecordMap.Service.FileService" Category="" ClassName="EnsLib.RecordMap.Service.FileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+    <Setting Target="Adapter" Name="FileSpec">*txt</Setting>
+    <Setting Target="Host" Name="RecordMap">Demo.RecordMap.Map.Delimited</Setting>
+    <Setting Target="Host" Name="TargetConfigNames">interop.bp.Transformer</Setting>
+  </Item>
   <Item Name="interop.bs.FHIRFileService" Category="" ClassName="interop.bs.FHIRFileService" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
     <Setting Target="Adapter" Name="FileSpec">*.json</Setting>
     <Setting Target="Host" Name="TargetConfigNames">interop.bp.FileToFHIRServer</Setting>

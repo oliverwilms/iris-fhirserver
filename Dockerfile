@@ -4,7 +4,8 @@ FROM $IMAGE
 USER root
 
 WORKDIR /opt/irisapp
-RUN chown ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisapp
+RUN mkdir -p /opt/irisapp/fhir-input
+RUN chown -R ${ISC_PACKAGE_MGRUSER}:${ISC_PACKAGE_IRISGROUP} /opt/irisapp
 
 USER ${ISC_PACKAGE_MGRUSER}
 

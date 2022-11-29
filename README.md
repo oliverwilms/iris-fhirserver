@@ -50,6 +50,8 @@ Copy recordmap sample file to fhir-input directory inside the container
 cp /opt/irisapp/delimited/RecordMap_Delimited_TX.txt /opt/irisapp/fhir-input/TX.txt
 ```
 
+The EnsLib.RecordMap.Service.FileService sends the file to interop.bp.Transformer where the RecordMap record is transformed to FHIR. You should be able to find the patient in FHIRSERVER.
+
 ## Testing FHIR R4 API
 
 Open URL http://localhost:32783/fhir/r4/metadata

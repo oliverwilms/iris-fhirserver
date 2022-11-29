@@ -10,6 +10,7 @@ USER ${ISC_PACKAGE_MGRUSER}
 
 COPY  src src
 COPY data/fhir fhirdata
+COPY data/recordmap/delimited delimited
 COPY iris.script /tmp/iris.script
 COPY fhirUI /usr/irissys/csp/user/fhirUI
 COPY interop/src interop/src

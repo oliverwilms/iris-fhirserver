@@ -6,7 +6,7 @@ This is my first FHIR app
 
 It contains a FHIR SERVER, imports test data, and demoes REST API usage with a simple web page.
 
-I added an Interoperability Production to process messages and send requests to the FHIR SERVER.
+I added an Interoperability Production which can transform a RecordMap to FHIR. It sends new patients to the FHIR SERVER.
 
 ## Prerequisites
 Make sure you have [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [Docker desktop](https://www.docker.com/products/docker-desktop) installed.
@@ -42,6 +42,13 @@ FHIRSERVER>d ##class(fhirtemplate.Setup).LoadPatientData("/irisdev/app/output/fh
 ```
 
  with using the [following project](https://github.com/intersystems-community/irisdemo-base-synthea)
+
+## Transform RecordMap to FHIR
+
+Copy recordmap sample file to fhir-input directory inside the container 
+```
+cp /opt/irisapp/delimited/RecordMap_Delimited_TX.txt /opt/irisapp/fhir-input/TX.txt
+```
 
 ## Testing FHIR R4 API
 

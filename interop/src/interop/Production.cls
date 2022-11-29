@@ -43,6 +43,8 @@ XData ProductionDefinition
   </Item>
   <Item Name="interop.bp.SimpleServiceFHIRHandler" Category="" ClassName="interop.bp.SimpleServiceFHIRHandler" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
+  <Item Name="interop.bp.Transformer" Category="" ClassName="interop.bp.Transformer" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
+  </Item>
   <Item Name="DummyLogOperation" Category="" ClassName="EnsLib.File.PassthroughOperation" PoolSize="1" Enabled="false" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
   </Item>
 </Production>

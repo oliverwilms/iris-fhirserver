@@ -24,11 +24,11 @@ $ docker-compose up -d
 ```
 
 ## Patient data
-The template provides several patients in [/data/fhir](https://github.com/intersystems-community/iris-fhir-server-template/tree/master/data/fhir) folder which are automatically loaded. You can generate more patients doing the following. Open terminal shell in repository folder and call:
+The template provides several patients in [/data/fhir](https://github.com/intersystems-community/iris-fhir-server-template/tree/master/data/fhir) folder which are automatically loaded. To generate more patients, open terminal shell in repository folder and call:
 ```
 #./synthea-loader.sh 10
 ```
-this will create 10 more patients in data/fhir folder.
+This will create 10 more patients in data/fhir folder.
 Then open IRIS terminal in FHIRSERVER namespace with the following command:
 ```
 docker-compose exec iris iris session iris -U FHIRServer

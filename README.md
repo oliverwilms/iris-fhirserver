@@ -2,9 +2,7 @@
  [![Quality Gate Status](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Firis-fhirserver&metric=alert_status)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Firis-fhirserver)
  [![Reliability Rating](https://community.objectscriptquality.com/api/project_badges/measure?project=intersystems_iris_community%2Firis-fhirserver&metric=reliability_rating)](https://community.objectscriptquality.com/dashboard?id=intersystems_iris_community%2Firis-fhirserver)
 # iris-fhir-app
-This is my first FHIR app
-
-It contains a FHIR SERVER, imports test data, and demoes REST API usage with a simple web page.
+This is my first FHIR app. It contains a FHIR SERVER, imports test data, and demoes REST API usage with a simple web page.
 
 I added an Interoperability Production which can transform a RecordMap to FHIR. It sends new patients to the FHIR SERVER.
 
